@@ -385,3 +385,53 @@ html {
         transform: translateY(0);
     }
 }
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    .about-container,
+    .gallery-grid,
+    .contact-content {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 24px !important;
+        padding: 20px 8px !important;
+    }
+
+    .profile-section,
+    .bio-section {
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+    }
+
+    .artist-image {
+        width: 160px !important;
+        height: 160px !important;
+    }
+
+    .hero {
+        padding: 48px 8px 32px 8px !important;
+    }
+
+    .hero h1 {
+        font-size: 2rem !important;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .art-piece {
+        width: 100% !important;
+        margin-bottom: 24px !important;
+    }
+
+    .contact-section {
+        padding: 24px 8px !important;
+    }
+
+    .contact-info {
+        width: 100% !important;
+        text-align: center !important;
+    }
+}
